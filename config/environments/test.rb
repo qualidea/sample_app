@@ -39,4 +39,8 @@ Rails.application.configure do
 
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
+  
+  config.action_mailer.delivery_method = :test
+  config.action_mailer.default_url_options = {host: "https://d850a40ffd0c4e7c99f5b901cd9ed4d0.vfs.cloud9.us-east-2.amazonaws.com/"}
+  
 end
